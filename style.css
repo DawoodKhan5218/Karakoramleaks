@@ -1,4 +1,4 @@
-/* General reset */
+/* ====== General Reset ====== */
 * {
   margin: 0;
   padding: 0;
@@ -6,113 +6,79 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* ====== Body ====== */
 body {
-  background-color: #f8f9fa; /* light grey like Wikipedia */
-  color: #202122;           /* dark text */
+  background-color: #f8f9fa;
+  color: #222;
   line-height: 1.6;
-  padding: 20px;
 }
 
-/* Container */
+/* ====== Container ====== */
 .container {
   max-width: 900px;
-  margin: auto;
+  margin: 40px auto;
   background: #fff;
   padding: 25px;
-  border: 1px solid #dcdcdc;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Heading */
+/* ====== Headings ====== */
 h1 {
-  font-size: 2rem;
-  border-bottom: 2px solid #dcdcdc;
+  border-bottom: 2px solid #ccc;
   padding-bottom: 10px;
   margin-bottom: 20px;
-  color: #222;
+  font-size: 28px;
 }
 
-/* Infobox (right-side card like Wikipedia) */
+h2 {
+  margin-top: 25px;
+  font-size: 22px;
+  color: #333;
+}
+
+/* ====== Infobox (profile box) ====== */
 .infobox {
   float: right;
-  width: 280px;
-  background: #fdfdfd;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  width: 260px;
+  border: 1px solid #ddd;
+  background: #fefefe;
   padding: 15px;
-  margin: 0 0 15px 20px;
-  font-size: 0.95rem;
-}
-
-.infobox img {
-  width: 100%;
-  border-radius: 6px;
-  margin-bottom: 10px;
-}
-
-.infobox p {
-  margin: 8px 0;
-}
-
-/* Paragraphs */
-p {
-  margin-bottom: 15px;
-  font-size: 1rem;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  margin-top: 40px;
-  padding-top: 10px;
-  border-top: 1px solid #dcdcdc;
-  font-size: 0.9rem;
-  color: #555;
-}  margin-bottom: 20px;
-}
-
-/* Paragraphs */
-p {
-  margin-bottom: 15px;
-  font-size: 16px;
-}
-
-/* Sidebar / infobox like Wikipedia */
-.infobox {
-  float: right;
-  width: 280px;
-  background: #fdfdfd;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  margin: 0 0 20px 20px;
-  padding: 15px;
-  font-size: 14px;
-}
-
-.infobox img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-/* Links */
-a {
-  color: #0645ad;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  margin-top: 40px;
-  padding: 15px;
-  text-align: center;
-  background: #eee;
+  margin-left: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
+}
+
+.infobox img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* ====== Social Links ====== */
+.social-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.social-links li {
+  margin-bottom: 8px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 500;
+}
+
+.social-links a:hover {
+  color: #005999;
+}
+
+/* ====== Footer ====== */
+footer {
+  text-align: center;
+  padding: 20px;
   font-size: 14px;
-  color: #555;
+  color: #666;
 }
