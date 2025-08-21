@@ -1,40 +1,75 @@
-/* Reset some defaults */
+/* General reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Body styling */
 body {
-  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f8f9fa; /* light grey like Wikipedia */
+  color: #202122;           /* dark text */
   line-height: 1.6;
-  background-color: #f8f9fa;
-  color: #202122;
   padding: 20px;
 }
 
-/* Container for main content */
+/* Container */
 .container {
-  max-width: 1000px;
-  margin: 0 auto;
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-/* Headings */
-h1, h2, h3 {
-  font-family: "Georgia", serif;
-  margin-bottom: 15px;
-  color: #202122;
-}
-
+/* Heading */
 h1 {
-  border-bottom: 2px solid #ddd;
+  font-size: 2rem;
+  border-bottom: 2px solid #dcdcdc;
   padding-bottom: 10px;
   margin-bottom: 20px;
+  color: #222;
+}
+
+/* Infobox (right-side card like Wikipedia) */
+.infobox {
+  float: right;
+  width: 280px;
+  background: #fdfdfd;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 0 0 15px 20px;
+  font-size: 0.95rem;
+}
+
+.infobox img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.infobox p {
+  margin: 8px 0;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 10px;
+  border-top: 1px solid #dcdcdc;
+  font-size: 0.9rem;
+  color: #555;
+}  margin-bottom: 20px;
 }
 
 /* Paragraphs */
