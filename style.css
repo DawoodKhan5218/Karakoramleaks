@@ -1,99 +1,83 @@
-/* General Reset */
+/* Reset some defaults */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body styling */
 body {
-  font-family: 'Inter', sans-serif;
-  background: #f9fafb;
-  color: #222;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
-}
-
-/* Topbar */
-.topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #fff;
-  border-bottom: 1px solid #e5e7eb;
-  padding: 12px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.topbar .brand {
-  font-size: 1.4rem;
-  font-weight: 600;
-  cursor: pointer;
-  color: #1f2937;
-}
-
-.topbar input {
-  padding: 6px 12px;
-  border-radius: 20px;
-  border: 1px solid #d1d5db;
-  width: 220px;
-}
-
-/* Layout */
-.layout {
-  display: flex;
-  min-height: calc(100vh - 60px);
-}
-
-/* Sidebar */
-.sidebar {
-  width: 240px;
-  background: #fff;
-  border-right: 1px solid #e5e7eb;
+  background-color: #f8f9fa;
+  color: #202122;
   padding: 20px;
 }
 
-.sidebar h3 {
-  font-size: 1.1rem;
-  margin-bottom: 12px;
-  color: #374151;
+/* Container for main content */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.sidebar nav a {
-  display: block;
-  padding: 8px 10px;
-  border-radius: 6px;
-  color: #374151;
-  text-decoration: none;
-  margin-bottom: 6px;
-  transition: background 0.2s;
+/* Headings */
+h1, h2, h3 {
+  font-family: "Georgia", serif;
+  margin-bottom: 15px;
+  color: #202122;
 }
 
-.sidebar nav a:hover {
-  background: #f3f4f6;
+h1 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-/* Article */
-.article {
-  flex: 1;
-  padding: 24px;
-  background: #f9fafb;
+/* Paragraphs */
+p {
+  margin-bottom: 15px;
+  font-size: 16px;
 }
 
-.article h1 {
-  font-size: 2rem;
-  margin-bottom: 16px;
-  color: #111827;
-}
-
-.article img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin: 10px 0;
-}
-
-/* Infobox (like Wikipedia) */
+/* Sidebar / infobox like Wikipedia */
 .infobox {
   float: right;
   width: 280px;
+  background: #fdfdfd;
+  border: 1px solid #ccc;
+  border-radius: 8px;
   margin: 0 0 20px 20px;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.infobox img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  text-align: center;
+  background: #eee;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #555;
+}
