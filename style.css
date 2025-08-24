@@ -16,25 +16,111 @@ body {
 .topbar {
   background: #3366cc;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* allow wrapping on small screens */
 }
 
 .topbar .logo {
   font-size: 20px;
   font-weight: bold;
+  margin-bottom: 8px;
 }
 
 .topbar input {
-  padding: 5px 10px;
+  padding: 6px 10px;
   border-radius: 4px;
   border: none;
   font-size: 14px;
+  width: 200px;
 }
 
 /* Container */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Headings */
+h1 {
+  font-size: 26px;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 15px 0 10px;
+}
+
+/* Profile list */
+#profileList {
+  list-style: none;
+  margin-top: 10px;
+}
+
+#profileList li {
+  margin: 10px 0;
+}
+
+#profileList a {
+  text-decoration: none;
+  color: #3366cc;
+  font-weight: 500;
+}
+
+#profileList a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  background: #f1f1f1;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+}
+
+/* 📱 Mobile Responsive Adjustments */
+@media (max-width: 600px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topbar input {
+    width: 100%;  /* Full width search bar on mobile */
+    margin-top: 8px;
+  }
+
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  #profileList a {
+    font-size: 16px;
+  }
+}/* Container */
 .container {
   width: 80%;
   max-width: 900px;
