@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 📱 important for mobile scaling -->
   <title>Karakoram Leaks</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- 🔹 Topbar with Logo + Search -->
   <header class="topbar">
     <div class="logo">Karakoram Leaks</div>
     <input type="text" id="searchInput" placeholder="Search students..." onkeyup="searchProfiles()">
   </header>
 
+  <!-- 🔹 Main Container -->
   <div class="container">
     <h1>Welcome to Karakoram Leaks — Student Wiki Project</h1>
 
@@ -22,19 +25,9 @@
     </ul>
   </div>
 
+  <!-- 🔹 Footer -->
   <footer>
-    <p>© 2025 Karakoram Leaks</p>
-  </footer>
-
-  <script>
-  function searchProfiles() {
-    let input = document.getElementById("searchInput").value.toLowerCase();
-    let list = document.getElementById("profileList").getElementsByTagName("li");
-
-    for (let i = 0; i < list.length; i++) {
-      let name = list[i].textContent.toLowerCase();
-      if (name.includes(input)) {
-        list[i].style.display = "";
+    <p>© 2025 Karakoram Leaks</p>        list[i].style.display = "";
       } else {
         list[i].style.display = "none";
       }
