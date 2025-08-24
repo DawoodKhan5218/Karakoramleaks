@@ -1,115 +1,84 @@
-/* Reset */
+/* ====== General Reset ====== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Body */
+/* ====== Body ====== */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
-}
-
-/* Container */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Headings */
-h1 {
-  font-size: 2.5rem;
+  background-color: #f8f9fa;
   color: #222;
-  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* ====== Container ====== */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ====== Headings ====== */
+h1 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 28px;
 }
 
 h2 {
-  font-size: 1.8rem;
-  margin: 20px 0 15px;
-  color: #444;
+  margin-top: 25px;
+  font-size: 22px;
+  color: #333;
 }
 
-/* Intro text */
-.container p {
+/* ====== Infobox (profile box) ====== */
+.infobox {
+  float: right;
+  width: 260px;
+  border: 1px solid #ddd;
+  background: #fefefe;
+  padding: 15px;
+  margin-left: 20px;
   margin-bottom: 20px;
-  color: #555;
+  border-radius: 10px;
 }
 
-/* Student Profiles list */
-ul {
+.infobox img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* ====== Social Links ====== */
+.social-links {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
 }
 
-ul li {
-  margin: 10px 0;
+.social-links li {
+  margin-bottom: 8px;
 }
 
-ul li a {
+.social-links a {
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: #0066cc;
-  transition: color 0.3s ease;
+  color: #0077cc;
+  font-weight: 500;
 }
 
-ul li a:hover {
-  color: #ff6600;
+.social-links a:hover {
+  color: #005999;
 }
 
-/* Footer */
+/* ====== Footer ====== */
 footer {
-  margin-top: 40px;
-  background: #111;
-  color: #fff;
-  padding: 15px 0;
   text-align: center;
-  font-size: 0.9rem;
-}/* Student Profiles */
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  margin: 8px 0;
-}
-
-ul li a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #0066cc;
-  transition: color 0.3s ease;
-}
-
-ul li a:hover {
-  color: #ff6600;
-}
-
-/* Footer */
-footer {
-  background: #111;
-  color: white;
-  padding: 15px 0;
-  text-align: center;
-  margin-top: 30px;
-  font-size: 0.9rem;
-}  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-}
-
-/* Fade effect */
-.fade {
-  animation: fadeEffect 2s;
-}
-
-@keyframes fadeEffect {
-  from {opacity: 0.4;}
-  to {opacity: 1;}
+  padding: 20px;
+  font-size: 14px;
+  color: #666;
 }
