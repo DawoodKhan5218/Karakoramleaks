@@ -81,4 +81,51 @@ footer {
   padding: 20px;
   font-size: 14px;
   color: #666;
+}  color: #333;
+}
+
+/* ====== Infobox (profile box) ====== */
+.infobox {
+  float: right;
+  width: 260px;
+  border: 1px solid #ddd;
+  background: #fefefe;
+  padding: 15px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.infobox img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* ====== Social Links ====== */
+.social-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.social-links li {
+  margin-bottom: 8px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 500;
+}
+
+.social-links a:hover {
+  color: #005999;
+}
+
+/* ====== Footer ====== */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #666;
 }
