@@ -6,16 +6,40 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="topbar">
+    <div class="logo">Karakoram Leaks</div>
+    <input type="text" id="searchInput" placeholder="Search students..." onkeyup="searchProfiles()">
+  </header>
+
   <div class="container">
-    <h1>Karakoram Leaks</h1>
-    <p>Welcome to Karakoram Leaks — Student Wiki Project.</p>
+    <h1>Welcome to Karakoram Leaks — Student Wiki Project</h1>
 
     <h2>Student Profiles</h2>
-    <ul>
+    <ul id="profileList">
       <li><a href="ahmad.html">Ahmad Khan Lodhi</a></li>
       <li><a href="parkha.html">Parkha Shahab</a></li>
       <li><a href="aisha.html">Aisha</a></li>
     </ul>
   </div>
+
+  <footer>
+    <p>© 2025 Karakoram Leaks</p>
+  </footer>
+
+  <script>
+  function searchProfiles() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let list = document.getElementById("profileList").getElementsByTagName("li");
+
+    for (let i = 0; i < list.length; i++) {
+      let name = list[i].textContent.toLowerCase();
+      if (name.includes(input)) {
+        list[i].style.display = "";
+      } else {
+        list[i].style.display = "none";
+      }
+    }
+  }
+  </script>
 </body>
 </html>
