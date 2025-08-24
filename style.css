@@ -9,14 +9,14 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: #f4f4f4;
+  background: #f9f9f9;
   color: #333;
 }
 
 /* Container */
 .container {
-  max-width: 900px;
-  margin: auto;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
   text-align: center;
 }
@@ -30,11 +30,47 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
-  margin: 20px 0;
+  margin: 20px 0 15px;
   color: #444;
 }
 
-/* Student Profiles */
+/* Intro text */
+.container p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Student Profiles list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #0066cc;
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  color: #ff6600;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  background: #111;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}/* Student Profiles */
 ul {
   list-style: none;
   padding: 0;
