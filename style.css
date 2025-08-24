@@ -1,40 +1,145 @@
-/* General Page Layout */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-  color: #202122;
+/* Reset and Base */
+*, *::before, *::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Top Navigation / Header */
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Topbar */
 .topbar {
   background: #2a4d69;
   color: white;
   padding: 12px 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.topbar .logo {
-  font-weight: bold;
+.logo {
   font-size: 20px;
+  font-weight: bold;
 }
 
 .topbar input[type="text"] {
   padding: 6px 10px;
   border: none;
   border-radius: 20px;
-  font-size: 14px;
   width: 200px;
+  max-width: 100%;
+  margin-top: 8px;
 }
 
-/* Main Container */
+/* Container */
 .container {
   max-width: 900px;
   margin: 20px auto;
+  background: white;
   padding: 20px;
+  border-radius: 8px;
+}
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* Student List */
+#profileList {
+  list-style: none;
+  margin-top: 10px;
+}
+
+#profileList li {
+  margin-bottom: 8px;
+}
+
+#profileList a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+#profileList a:hover {
+  text-decoration: underline;
+}
+
+/* Infobox */
+.infobox {
+  float: right;
+  width: 260px;
+  background: #f9f9f9;
+  border: 1px solid #a2a9b1;
+  padding: 10px;
+  margin: 0 0 15px 15px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+/* Thumbnail-style Image */
+.infobox img {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  padding: 3px;
+}
+
+/* Social Links inside Infobox */
+.social-links {
+  list-style: none;
+}
+.social-links li {
+  margin: 5px 0;
+}
+.social-links a {
+  text-decoration: none;
+  color: #0645ad;
+}
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .infobox {
+    float: none;
+    width: 90%;
+    margin: 20px auto;
+  }
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .topbar input[type="text"] {
+    width: 100%;
+    margin-top: 10px;
+  }
+}  padding: 20px;
   background: white;
   border: 1px solid #ddd;
   border-radius: 8px;
