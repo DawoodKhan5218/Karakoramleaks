@@ -1,84 +1,50 @@
-/* ====== General Reset ====== */
-* {
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fa;
 }
 
-/* ====== Body ====== */
-body {
-  background-color: #f8f9fa;
-  color: #222;
-  line-height: 1.6;
-}
-
-/* ====== Container ====== */
 .container {
-  max-width: 900px;
-  margin: 40px auto;
-  background: #fff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-/* ====== Headings ====== */
-h1 {
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  font-size: 28px;
-}
-
-h2 {
-  margin-top: 25px;
-  font-size: 22px;
-  color: #333;
-}
-
-/* ====== Infobox (profile box) ====== */
-.infobox {
-  float: right;
-  width: 260px;
-  border: 1px solid #ddd;
-  background: #fefefe;
-  padding: 15px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
-
-.infobox img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 12px;
-}
-
-/* ====== Social Links ====== */
-.social-links {
-  list-style: none;
-  padding-left: 0;
-}
-
-.social-links li {
-  margin-bottom: 8px;
-}
-
-.social-links a {
-  text-decoration: none;
-  color: #0077cc;
-  font-weight: 500;
-}
-
-.social-links a:hover {
-  color: #005999;
-}
-
-/* ====== Footer ====== */
-footer {
-  text-align: center;
   padding: 20px;
-  font-size: 14px;
-  color: #666;
+  text-align: center;
+}
+
+.background-slideshow {
+  padding: 40px 20px;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+.background-slideshow h2 {
+  margin-bottom: 20px;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+/* Fade effect */
+.fade {
+  animation: fadeEffect 2s;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0.4;}
+  to {opacity: 1;}
 }
